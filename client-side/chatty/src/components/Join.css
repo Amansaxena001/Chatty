@@ -1,0 +1,110 @@
+
+  #root {
+    height: 100vh;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .joinOuterContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    background-image: url('./g2.jpg');
+    background-size: cover;
+  }
+  
+  .jumbotron{
+    background-color: transparent;
+    border: 2px solid #F0F0F0;
+
+  }
+  
+  .joinInnerContainer {
+    color: #9B9B9B;
+    cursor: text;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    -moz-transform: translateY(-34px);
+    -ms-transform: translateY(-34px);
+    -webkit-transform: translateY(-34px);
+    transform: translateY(-34px);
+    transition: all 0.3s;
+  }
+  .joinInnerContainer:focus + .joinInput{
+    color: #F0F0F0;
+    font-size: 13px;
+    margin-top: 10px;
+    -moz-transform: translateY(-74px);
+    -ms-transform: translateY(-74px);
+    -webkit-transform: translateY(-74px);
+    transform: translateY(-74px);
+  }
+  
+  .joinInput {
+    background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #4A4A4A;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  outline: 0;
+  padding: 5px 20px;
+  text-align: center;
+  transition: all 0.3s;
+  width: 200px;
+  }
+  .joinInput:focus{
+    max-width: 100%;
+  width: 400px;
+  }
+  
+  .heading {
+    color: white;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+  }
+  
+  button {
+    background: transparent;
+    color: #F0F0F0;
+    border: 2px solid #F0F0F0;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 15px 75px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 30px;
+    -webkit-transition: all 0.4s;
+   -moz-transition: all 0.4s;
+   transition: all 0.4s;
+  }
+  button:hover, button:focus {
+    background-color: white;
+    color: #333333;
+  }
+  .mt-20 {
+    margin-top: 50px;
+  }
+  .bt-20{
+    margin-top: 100px;
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .joinOuterContainer {
+      height: 100%;
+    }
+  
+   
+  
+  }
+  
+  button:focus {
+    outline: 0;
+  }
