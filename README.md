@@ -51,5 +51,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ###Screenshots
 ![Web 1920 – 1@2x](https://user-images.githubusercontent.com/49619101/85105294-ded21500-b227-11ea-9638-3a221e2bf50b.png)
 
+![s@2x](https://user-images.githubusercontent.com/49619101/85105359-04f7b500-b228-11ea-80b0-087c556ca9fb.png)
 
 
