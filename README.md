@@ -49,5 +49,5 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 #Screenshots
-![Web 1920 – 1@2x](https://user-images.githubusercontent.com/49619101/85105186-a7636880-b227-11ea-84b4-d91624c2ff98.jpg)
+
 
