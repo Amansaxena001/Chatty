@@ -29,10 +29,14 @@ npm install
 
 
 ## Amendments to be done:
-**1** UNIT TESTING WITH MOCHA
-**2** UI/UX a better experience for users
-**1** Twilio Auth(OTP)
-**1** Small bug fixes
+**1** UNIT TESTING WITH MOCHA.
+```
+**2** UI/UX a better experience for users.
+```
+**1** Twilio Auth(OTP).
+```
+**1** Small bug fixes.
+```
 
 ## BACKEND BUILT WITH
 **1** Express 
