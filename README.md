@@ -33,13 +33,15 @@ npm install
 
 **2** UI/UX a better experience for users.
 
-**1** Twilio Auth(OTP).
+**3** Twilio Auth(OTP).
 
-**1** Small bug fixes.
+**4** Small bug fixes.
 
 ## BACKEND BUILT WITH
 **1** Express 
+
 **2** Bcrypt
+
 **3** Passport
+
 **4** Jwt
-**5** Ejs
