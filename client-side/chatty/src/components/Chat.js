@@ -15,8 +15,9 @@ const Chat=({location})=>{
     const[room, setRoom]=useState('')
     const[message, setMessage]=useState('')
     const[messages, setMessages]=useState([])
-    const ENDPOINT = 'https://chatty-india.herokuapp.com/'
-
+    const[users , setUsers] = useState([])
+    // const ENDPOINT = 'https://chatty-india.herokuapp.com/'
+    const ENDPOINT = 'http://localhost:5000/'
 
 
 
@@ -44,6 +45,15 @@ useEffect(()=>{
      setMessages([...messages,message])
     })
 },[messages])
+
+
+useEffect(()=>{
+    socket.on('roomData',(roomData)=>{
+        console.log(roomData);
+    });
+},[])
+
+
 
 //function for seding messages
 const sendMessage = (event) => {
