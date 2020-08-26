@@ -1,4 +1,9 @@
+# Chatty
+A react chat app made with socket io, Node, Expess
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This project has 2 folders one with client name handles all the react functionalites and other server folder which handles Api calls from 
+socket.io.
 
 ## Available Scripts
 
@@ -42,4 +47,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+###Screenshots
+![Web 1920 – 1@2x](https://user-images.githubusercontent.com/49619101/85105294-ded21500-b227-11ea-9638-3a221e2bf50b.png)
+
+![s@2x](https://user-images.githubusercontent.com/49619101/85105359-04f7b500-b228-11ea-80b0-087c556ca9fb.png)
+
 
