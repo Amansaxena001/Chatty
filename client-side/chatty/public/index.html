@@ -4,7 +4,12 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -30,6 +35,28 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBwKBqQO6h4wgz9lOBKuFXYFHr9Lbxzj2w",
+        authDomain: "chatty-3a5d3.firebaseapp.com",
+        databaseURL: "https://chatty-3a5d3.firebaseio.com",
+        projectId: "chatty-3a5d3",
+        storageBucket: "chatty-3a5d3.appspot.com",
+        messagingSenderId: "1087953607568",
+        appId: "1:1087953607568:web:42aeaafa591f53b340b115",
+        measurementId: "G-LV24YDC91D",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
