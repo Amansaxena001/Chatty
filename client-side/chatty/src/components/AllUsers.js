@@ -1,6 +1,7 @@
 import React from "react";
 
-const AllUsers = ({ allUsers: { id, name } }) => {
+const AllUsers = (userdata) => {
+  const { name, id } = userdata;
   return (
     <div>
       {/* <h1 style={{ color: "white" }}>{}</h1> */}

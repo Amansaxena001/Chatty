@@ -6,7 +6,6 @@ import Info from "./Info";
 import Input from "./Input";
 import Messages from "./Messages";
 import "./Messages.css";
-import AllUsers from "./AllUsers";
 
 let socket;
 
@@ -15,9 +14,8 @@ const Chat = ({ location }) => {
   const [room, setRoom] = useState("");
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
+  const [users, setUsers] = useState([]);
   const ENDPOINT = "https://chatty-india.herokuapp.com/";
-
-  const user = [];
 
   useEffect(() => {
     /* eslint no-restricted-globals:0 */
@@ -39,14 +37,10 @@ const Chat = ({ location }) => {
     socket.on("message", (message) => {
       setMessages([...messages, message]);
     });
-  }, [messages]);
-
-  useEffect(() => {
-    socket.on("roomData", (roomData) => {
-      user.push(roomData.users);
-      console.log(user);
+    socket.on("roomData", ({ users }) => {
+      setUsers(users);
     });
-  });
+  }, [messages]);
 
   //function for seding messages
   const sendMessage = (event) => {
@@ -60,17 +54,29 @@ const Chat = ({ location }) => {
   // console.log(message,messages)
   return (
     <div className="outerContainer">
-      <div className="container">
-        <Info room={room} />
-        <Messages messages={messages} name={name} />
-
-        <Input
-          message={message}
-          setMessage={setMessage}
-          sendMessage={sendMessage}
-        />
+      <div className="userContainer">
+        <h2 className="userHeader ">Chatting</h2>
+        <ul>
+          <li style={{ color: "#ffff", listStyle: "none" }}>
+            {users.map(({ name }) => (
+              <div key={name} className="activeItem">
+                {name}
+              </div>
+            ))}
+          </li>
+        </ul>
       </div>
-      <AllUsers allUsers={user} />
+      <div className="container">
+        <div>
+          <Info room={room} />
+          <Messages messages={messages} name={name} />
+        </div>
+
+        <div className="type">
+          <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
+        </div>
+      </div>
+      {/* <AllUsers userdata={userdata} /> */}
     </div>
   );
 };

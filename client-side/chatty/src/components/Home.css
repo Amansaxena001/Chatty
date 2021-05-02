@@ -1,0 +1,49 @@
+.outer {
+  display: flex;
+}
+.inner__1 {
+  flex: 0.5;
+  background-color: #f4a460;
+  height: 100vh;
+  width: 100%;
+}
+.inner__2 {
+  flex: 0.5;
+  background-color: #fff;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.hero {
+  color: #000000;
+  margin-left: 10rem;
+  font-weight: bolder;
+  font-size: 96px;
+  margin-top: 15rem;
+}
+.hero__2 {
+  font-size: 19px;
+  font-weight: 500;
+  margin-left: 11rem;
+  margin-top: -20px;
+  opacity: 0.9;
+}
+.hero__3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 11rem;
+  margin-top: 7rem;
+}
+.btn {
+  color: #fff;
+  font-size: 12px;
+  margin-left: 11rem;
+  width: 60%;
+  height: 42px;
+}
+.btn:hover {
+  color: #fff;
+}
