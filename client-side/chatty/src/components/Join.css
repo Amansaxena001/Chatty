@@ -13,13 +13,27 @@
     text-align: center;
     height: 100vh;
     align-items: center;
-    background-image: url('./g2.jpg');
     background-size: cover;
+    background-color:  #e4f2ed ;
   }
   
   .jumbotron{
-    background-color: transparent;
+    background-color: #fff;
     border: 2px solid #F0F0F0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 0;
+    border: 0px;
+
+  }
+  .glossy-container{
+    background: rgba(255, 255, 255, 0.13);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.4px);
+    -webkit-backdrop-filter: blur(11.4px);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 10px;
+    border-radius: 20px;
 
   }
   
@@ -28,7 +42,6 @@
     cursor: text;
     font-size: 15px;
     line-height: 20px;
-    text-transform: uppercase;
     -moz-transform: translateY(-34px);
     -ms-transform: translateY(-34px);
     -webkit-transform: translateY(-34px);
@@ -48,8 +61,8 @@
   .joinInput {
     background-color: transparent;
   border: 0;
-  border-bottom: 2px solid #4A4A4A;
-  color: white;
+  border-bottom: 2px solid #e0e0e0;
+  color:  #4c5052;
   font-size: 20px;
   letter-spacing: 1px;
   outline: 0;
@@ -64,36 +77,41 @@
   }
   
   .heading {
-    color: white;
-    font-size: 2.5em;
-    padding-bottom: 10px;
+    font-size:25px;
     border-bottom: 2px solid white;
+    font-weight: 700;
+    color:  #4c5052 ;
+    margin-top: 10px;
   }
   
-  button {
-    background: transparent;
+  .button1 {
     color: #F0F0F0;
     border: 2px solid #F0F0F0;
     font-size: 15px;
     letter-spacing: 2px;
     padding: 15px 75px;
-    text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
-    margin: 15px 30px;
     -webkit-transition: all 0.4s;
    -moz-transition: all 0.4s;
    transition: all 0.4s;
+   background-color:  #23b28f ;
+
   }
-  button:hover, button:focus {
-    background-color: white;
-    color: #333333;
+  .button1:hover, .button1:focus {
+    background-color:  #23b28f ;
+    color: #fff;
+    font-weight: 600;
   }
   .mt-20 {
     margin-top: 50px;
+    font-size: 16px;
   }
   .bt-20{
-    margin-top: 100px;
+    width:100%;
+    text-align: center;
+    border-radius: 6px;
+    margin-bottom: 30px;
   }
   
   @media (min-width: 320px) and (max-width: 480px) {
@@ -104,7 +122,13 @@
    
   
   }
-  
-  button:focus {
-    outline: 0;
+  .avatar-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
+.avatar-btn{
+  margin: 30px 0;
+  color: #23b28f !important;
+  border-color: transparent !important;
+}

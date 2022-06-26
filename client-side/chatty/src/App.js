@@ -1,6 +1,8 @@
 import React from 'react'
 import Join from './components/Join'
 import Chat from './components/Chat'
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
+
 
 import {BrowserRouter as Router,Route} from 'react-router-dom'
 
