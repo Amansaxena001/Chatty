@@ -12,7 +12,8 @@ const Input = ({ setMessage, sendMessage, message }) => (
       onChange={({ target: { value } }) => setMessage(value)}
       onKeyPress={event => event.key === 'Enter' ? sendMessage(event) : null}
     />
-    <button className="sendButton" onClick={e => sendMessage(e)}>Send</button>
+    <button className="sendButton" onClick={e => sendMessage(e)}>
+    <img src="https://img.icons8.com/material-rounded/25/FFFFFF/filled-sent.png"/>   </button>
   </form>
 )
 

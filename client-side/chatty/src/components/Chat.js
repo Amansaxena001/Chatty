@@ -13,6 +13,7 @@ let socket;
 const Chat = ({ location }) => {
   const [name, setName] = useState("");
   const [room, setRoom] = useState("");
+  const [avatar,setAvatar]=useState("")
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const ENDPOINT = "https://chatty-india.herokuapp.com/";
@@ -21,10 +22,11 @@ const Chat = ({ location }) => {
 
   useEffect(() => {
     /* eslint no-restricted-globals:0 */
-    const { name, room } = queryString.parse(location.search);
+    const { name, room,avatar } = queryString.parse(location.search);
 
     socket = io(ENDPOINT);
     setRoom(room);
+    setAvatar(avatar) 
 
     setName(name);
     socket.emit("join", { name, room }, (error) => {
@@ -33,7 +35,6 @@ const Chat = ({ location }) => {
       }
     });
   }, [ENDPOINT, location.search]);
-
   //messages middleware
   useEffect(() => {
     socket.on("message", (message) => {
@@ -62,7 +63,7 @@ const Chat = ({ location }) => {
     <div className="outerContainer">
       <div className="container">
         <Info room={room} />
-        <Messages messages={messages} name={name} />
+        <Messages messages={messages} name={name} avatar={avatar}  />
 
         <Input
           message={message}
@@ -70,7 +71,6 @@ const Chat = ({ location }) => {
           sendMessage={sendMessage}
         />
       </div>
-      <AllUsers allUsers={user} />
     </div>
   );
 };

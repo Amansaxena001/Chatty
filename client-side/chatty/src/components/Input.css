@@ -1,33 +1,42 @@
 .form {
-    display: flex;
-  }
-  
-  .input {
-    background-color: transparent;
-    color: #F0F0F0;
-    border: 2px solid #F0F0F0;
-    width: 90%;
-    height: 60px;
-    margin-top: 12px;
-    margin-left: 15px;
-    font-size: 1.2em;
-  }
-  
-  input:focus, textarea:focus, select:focus{
-    outline: none;
-  }
-  
-  .sendButton {
-    background: transparent;
-    color: #F0F0F0;
-    border: 2px solid #F0F0F0;
-    font-size: 15px;
-    letter-spacing: 2px;
-    padding: 15px 55px;
-    text-transform: uppercase;
-    cursor: pointer;
-    display: inline-block;
-    -webkit-transition: all 0.4s;
-   -moz-transition: all 0.4s;
-   transition: all 0.4s;
-  }
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input {
+  background-color: transparent;
+  color: #4b4b4b;
+  border: 2px solid #f5f7fb;
+  width: 90%;
+  border-radius: 40px;
+  padding: 10px 20px;
+  background-color: #f5f7fb;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 1px solid #fff;
+}
+
+.sendButton {
+  background: #3ba58b;
+  padding: 10px;
+  border: none;
+  transition: 0.3s ease all;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.sendButton:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease all;
+}
+button:focus,
+textarea:focus,
+select:focus {
+  outline: 1px solid #fff;
+}

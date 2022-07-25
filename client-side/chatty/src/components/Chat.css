@@ -3,18 +3,20 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('./g2.jpg');
     background-size: cover;
+    background-color: #f5f7fb;
   }
   
   .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: transparent;
     border: 2px solid #F0F0F0;
     height: 60%;
     width: 35%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   
   @media (min-width: 320px) and (max-width: 480px) {
