@@ -2,4 +2,9 @@
     padding: 5% 0;
     overflow: auto;
     flex: auto;
-  }
+}
+.mediatText {
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 10px;
+}

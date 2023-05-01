@@ -1,19 +1,7 @@
 {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
-    "eslint.validate": [
-      "javascript",
-      "typescript",
-      "typescriptreact"
-    ],
-    "files.associations": {
-      "*.js": "javascriptreact"
-  },
-    "typescript.validate.enable": true,
-    "typescript.suggestionActions.enabled": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "javascript.preferences.importModuleSpecifier": "project-relative",
-    "eslint.codeActionsOnSave.mode": "problems",
-    "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+},
+"editor.formatOnSave": true,
+"editor.defaultFormatter": "esbenp.prettier-vscode"
   }

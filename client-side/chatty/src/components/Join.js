@@ -71,8 +71,8 @@ setSrc(src+Math.random().toFixed(0))
             </button>
           </Link>
           <blockquote class="blockquote mb-100">
-            <footer className="blockquote-footer">
-              Chat anonymously |
+            <footer className="footer">
+              Chat anonymously <img src="https://img.icons8.com/ios-filled/40/000000/sleepy-eyes.png"/>
               <cite title="Source Title"> We got you covered</cite>
             </footer>
           </blockquote>

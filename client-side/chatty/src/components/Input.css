@@ -9,9 +9,17 @@
   color: #4b4b4b;
   border: 2px solid #f5f7fb;
   width: 90%;
-  border-radius: 40px;
   padding: 10px 20px;
+}
+.inputContainer{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
   background-color: #f5f7fb;
+  border-radius: 40px;
+
+
 }
 
 input:focus,
