@@ -2,7 +2,11 @@ import React from 'react';
 import './Message.css';
 import ReactEmoji from 'react-emoji';
 
-const Message = ({ message: { text, user, type = '' }, name, avatar }) => {
+const Message = ({
+    message: { text, user, type = '', fileData = '' },
+    name,
+    avatar,
+}) => {
     let isSentByCurrentUser = false;
 
     const trimmedName = name.trim().toLowerCase();
@@ -16,7 +20,7 @@ const Message = ({ message: { text, user, type = '' }, name, avatar }) => {
             >
                 <div className="media">
                     <img
-                        src={text}
+                        src={fileData}
                         height="100%"
                         width="100%"
                         style={{ borderRadius: 4 }}
